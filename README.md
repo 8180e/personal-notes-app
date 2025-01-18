@@ -14,9 +14,9 @@ This is a simple and functional web-based Personal Notes App that allows users t
 * **Bootstrap Icons**: Used for editing and deleting notes with intuitive icons.
 
 **How It Works**:
-* **Add a Note**: Enter the note content in the input field and click the "Submit" button to add it to the list.
-* **Edit a Note**: Each note has an edit option, enabling users to modify the content of the note directly.
-* **Delete a Note**: Notes can be deleted by clicking the trash icon next to each note.
-* **Persistence**: Notes are saved in localStorage and reappear when the page is reloaded.
+1. **Add a Note**: Enter the note content in the input field and click the "Submit" button to add it to the list.
+2. **Edit a Note**: Each note has an edit option, enabling users to modify the content of the note directly.
+3. **Delete a Note**: Notes can be deleted by clicking the trash icon next to each note.
+4. **Persistence**: Notes are saved in localStorage and reappear when the page is reloaded.
 
 This project demonstrates core web development skills, including working with HTML forms, CSS for layout and styling, and JavaScript for dynamic content and client-side storage.
