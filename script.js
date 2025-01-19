@@ -5,21 +5,13 @@ function saveNotes() {
   localStorage.setItem("notes", JSON.stringify(notes));
 }
 
-function createElement(element) {
-  return document.createElement(element);
-}
-
-function getElementById(id) {
-  return document.getElementById(id);
-}
-
 function addNoteToList(i, note) {
-  const li = createElement("li");
-  const editIcon = createElement("i");
-  const deleteIcon = createElement("i");
-  const form = createElement("form");
-  const input = createElement("input");
-  const submit = createElement("button");
+  const li = document.createElement("li");
+  const editIcon = document.createElement("i");
+  const deleteIcon = document.createElement("i");
+  const form = document.createElement("form");
+  const input = document.createElement("input");
+  const submit = document.createElement("button");
 
   editIcon.className = "bi bi-pencil";
   editIcon.onclick = () => form.hidden = !form.hidden;
@@ -46,11 +38,11 @@ function addNoteToList(i, note) {
   li.appendChild(deleteIcon);
   li.appendChild(form);
 
-  getElementById("notes").appendChild(li);
+  document.getElementById("notes").appendChild(li);
 }
 
 function addNote(event) {
-  const noteInput = getElementById("noteInput")
+  const noteInput = document.getElementById("noteInput");
   const noteContent = noteInput.value;
   if (noteContent) {
     notes.push(noteContent);
@@ -69,7 +61,7 @@ function editNote(event, textNode, i, note) {
 }
 
 function deleteNote(i, li) {
-  const notification = getElementById("notification");
+  const notification = document.getElementById("notification");
 
   delete notes[i];
   li.remove();
