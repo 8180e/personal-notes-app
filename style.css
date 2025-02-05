@@ -1,6 +1,13 @@
 @keyframes notification {
-  from {opacity: 1; display: block;}
-  to {opacity: 0; display: none;}
+  from {
+    opacity: 1;
+    display: block;
+  }
+
+  to {
+    opacity: 0;
+    display: none;
+  }
 }
 
 #notification {
