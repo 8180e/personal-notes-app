@@ -27,8 +27,8 @@ function addNoteToList(i, note) {
   submit.onclick = (event) => editNote(event, li.childNodes[0], i,
     input.value);
 
+  form.className = "edit";
   form.hidden = true;
-  form.style.width = "20%";
 
   form.appendChild(input);
   form.appendChild(submit);
