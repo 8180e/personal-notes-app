@@ -10,6 +10,16 @@
   }
 }
 
+.edit {
+  width: 90%;
+}
+
+@media only screen and (min-width: 768px) {
+  .edit {
+    width: 20%;
+  }
+}
+
 #notification {
   position: absolute;
   text-align: center;
